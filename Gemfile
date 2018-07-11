@@ -24,6 +24,10 @@ group :development do
   gem "web-console", ">= 3.3.0"
 end
 
+gem "bcrypt", "3.1.12"
 gem "bootsnap", ">=1.1.0", require: false
+gem "bootstrap", "~> 4.1.1"
+gem "config"
+gem "jquery-rails"
 gem "rubocop", "~> 0.54.0", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -1,2 +1,10 @@
 vi:
-  hello: "Xin chao"
+  hello: "Xin chào"
+  home: "Trang chủ"
+  help: "Trợ giúp"
+  about: "Về chúng tôi"
+  contact: "Liên hệ"
+  app_name: "Ứng dụng mẫu"
+  sign_up: "Đăng kí"
+  sign_up_now: "Đăng kí ngay bây giờ!"
+  login: "Đăng nhập"

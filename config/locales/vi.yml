@@ -22,3 +22,4 @@ vi:
   profile: "Hồ sơ"
   setting: "Cài đặt"
   invalid_error: "Mật khẩu hoặc email không hợp lệ"
+  remember: "Ghi nhớ trên máy tính này"

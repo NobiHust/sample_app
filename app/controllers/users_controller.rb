@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       log_in @user
-      flash[:success] = t "welcome"
+      flash[:success] = t("welcome")
       redirect_to @user
     else
       render :new
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
 
     return if @user
-    flash[:warning] = t "no_user_warning"
+    flash[:warning] = t("no_user_warning")
     redirect_to root_path
   end
 

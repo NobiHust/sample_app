@@ -22,3 +22,4 @@ en:
   profile: "Profile"
   setting: "Settings"
   invalid_error: "Invalid email/password combination"
+  remember: "Remember me on this computer"

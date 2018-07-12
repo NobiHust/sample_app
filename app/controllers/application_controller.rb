@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include SessionsHelper
   before_action :set_locale
 
   def set_locale
@@ -10,5 +11,4 @@ class ApplicationController < ActionController::Base
   end
 
   protect_from_forgery with: :exception
-  include SessionsHelper
 end

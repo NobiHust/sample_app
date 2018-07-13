@@ -12,11 +12,19 @@ class User < ApplicationRecord
                        allow_nil: true
 
   has_secure_password
+
   class << self
     def digest string
-      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
-                                                    BCrypt::Engine.cost
-      BCrypt::Password.create(string, cost: cost)
+      cost = User.choose_cost
+      BCrypt::Password.create string, cost: cost
+    end
+
+    def choose_cost
+      if ActiveModel::SecurePassword.min_cost
+        BCrypt::Engine::MIN_COST
+      else
+        BCrypt::Engine.cost
+      end
     end
 
     def new_token
@@ -36,6 +44,11 @@ class User < ApplicationRecord
 
   def forget
     update_attributes remember_digest: nil
+  end
+
+
+  def current_user? current_user
+    self == current_user
   end
 
   private

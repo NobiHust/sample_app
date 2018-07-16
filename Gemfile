@@ -34,3 +34,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "faker", "1.9.1"
 gem "bootstrap4-kaminari-views"
 gem "kaminari"
+gem "figaro", "~> 1.1", ">= 1.1.1"
+gem "sidekiq", "~> 5.0", ">= 5.0.5"
